@@ -28,7 +28,7 @@ export default function Detail({pokemon, id}){
         <div className=" rounded-lg mx-auto mt-10 bg-gray-200 p-4 shadow-lg xs:w-full sm:w-2/6 md:w-72 lg:w-3/6 xl:w-2/5" >
             <div className="text-center mx-auto">
                 <h1 className="text-2xl mb-1 font-bold text-center capitalize">{pokemon.name}</h1>
-                <h2 className="font-bold mb-5">{ "# " + pokemon.paddedIndex}</h2>
+                <h2 className="font-bold mb-3">{ "# " + pokemon.paddedIndex}</h2>
             </div>
             <div className="box-content  md:box-content lg:inline-flex">
                 <PokeCardDetail

@@ -3,7 +3,7 @@ import tachyons from 'tachyons'
 
 const Footer = () =>{
     return (
-<div className="bg-gray-900">
+<div className="bg-gray-900 shadow-lg">
     <footer className="flex flex-wrap items-center justify-between p-3">
         <div className="container mx-auto flex flex-col flex-wrap items-center justify-between">
             <ul className="flex mx-auto text-white text-center">
