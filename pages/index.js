@@ -16,8 +16,8 @@ const Home = ({pokemon}) => {
         <>
         
         <Layout title = "Next.js Pokedex">
-        <div className="bg-indigo-dark h-50 p-8">
-            <div className="container mx-auto py-8">
+        <div className="w-full">
+            <div className="container w-auto mx-auto py-8">
                 <input onChange={filteredPokemon} className="w-full h-16 px-8 rounded mb-8 focus:outline-none focus:shadow-outline text-xl shadow-lg" type="text" placeholder="Search..."/>
             </div>
       </div>
