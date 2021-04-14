@@ -17,15 +17,15 @@ const Home = ({pokemon}) => {
         <>
         
         <Layout title = "Pokedex Juan Pravata">
-            <h1 className = "text-5xl m-5 font-bold text-black text-center">
+            <h1 className = "text-1xl m-5 font-bold text-white text-center">
                 Pokédex
             </h1>
-        <div className="w-full">
-            <div className="container w-auto mx-auto py-8">
+        <div className="w-full h-1/3">
+            <div className="container w-3/5 mx-auto py-3.5">
                 <input onChange={filteredPokemon} className="w-full h-16 px-8 rounded mb-8 focus:outline-none focus:shadow-outline text-xl shadow-lg" type="text" placeholder="Search..."/>
             </div>
         </div>
-        <div style={{width: "100%", height:"57vh", overflow:"hidden"}}>
+        <div  className="mb-6 xs:h-96 xl:h-full" style={{width: "100%", maxHeight:"57vh", overflow:"scroll", overflowX:"hidden"}}>
             <div style={{width: "100%", height:"100%", overflow:"auto"}}>
                 <div className="grid grid-cols-4 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
               {pokes.map((poke,index) => {

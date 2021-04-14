@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 const Layout = ({title,children}) => {
 
     return (
-        <div className="bg-red-400 bg-background">
+        <div className="bg-background flex flex-col min-h-screen">
             <Head>
                 <title>{title}</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const Layout = ({title,children}) => {
                 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap" rel="stylesheet"></link>
             </Head>
             <Header/>
-            <main className = "container mx-auto">
+            <main className = "container mx-auto flex-grow" >
                 {children}
             </main>
             <Footer/>

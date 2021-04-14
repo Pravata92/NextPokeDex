@@ -23,10 +23,10 @@ export default function Detail({pokemon, id}){
         </a>
         </Link>
         </div>
-
-        <div className=" box-content rounded-lg mx-auto w-auto mt-10 bg-gray-200 p-4 shadow-lg ms: w-36 md: w-24 lg: w-28 xl:w-96" >
+        <div className="">
+        <div className="box-content rounded-lg mx-auto mt-10 bg-gray-200 p-4 shadow-lg xs:w-44 sm:w-48 md:w-72 lg:w-80 xl:w-96" >
             <div className="text-center mx-auto">
-                <h1 className="text-4xl mb-1 font-bold text-center capitalize">{pokemon.name}</h1>
+                <h1 className="text-2xl mb-1 font-bold text-center capitalize">{pokemon.name}</h1>
                 <h2 className="font-bold mb-5">{ "# " + pokemon.paddedIndex}</h2>
             </div>
             <div className="box-content md:box-content lg:inline-flex">
@@ -53,6 +53,7 @@ export default function Detail({pokemon, id}){
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         
         <p className="mt-10 text-center">
