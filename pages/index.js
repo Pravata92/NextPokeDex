@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Pokecard from "../components/Pokecard"
 import {useState} from 'react'
+import tachyons from 'tachyons'
 
 
 
@@ -12,18 +13,20 @@ const Home = ({pokemon}) => {
         const mapPokemon = pokemon.filter(poke => poke.name.includes(e.target.value.toLowerCase()))
         setPoke(mapPokemon)
     }
-    return (
+    return(
         <>
         
-        <Layout title = "Next.js Pokedex">
+        <Layout title = "Pokedex Juan Pravata">
+            <h1 className = "text-5xl m-5 font-bold text-black text-center">
+                Pokédex
+            </h1>
         <div className="w-full">
             <div className="container w-auto mx-auto py-8">
                 <input onChange={filteredPokemon} className="w-full h-16 px-8 rounded mb-8 focus:outline-none focus:shadow-outline text-xl shadow-lg" type="text" placeholder="Search..."/>
             </div>
-      </div>
-            <h1 className = "text-4xl mb-8 text-center">
-                Pokedex
-            </h1>
+        </div>
+        <div style={{width: "100%", height:"57vh", overflow:"hidden"}}>
+            <div style={{width: "100%", height:"100%", overflow:"auto"}}>
                 <div className="grid grid-cols-4 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
               {pokes.map((poke,index) => {
                   return(
@@ -38,6 +41,8 @@ const Home = ({pokemon}) => {
                   )
               })}
               </div>
+            </div>
+        </div>
         </Layout>
         
         </>

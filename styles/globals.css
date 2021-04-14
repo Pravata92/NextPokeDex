@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+*{
+font-family: 'Lexend', sans-serif;
+}
+
 
 .arrow-container{
     display: flex;
