@@ -49,15 +49,14 @@ Home.getInitialProps = async (query) => {
     const {results} = await res.json()
     const pokemon = results.map((result, index) => {
         const paddedIndex = ("00" + (index +1)).slice(-3)
-        const number = result.url.slice(34)
-        const id = number.substring(0, number.length - 1);
-        console.log(finalid)
+        const id = result.url.slice(34)
+        const finalid = id.substring(0, id.length - 1);
         const img = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${paddedIndex}.png`
         return {
             ...result,
             paddedIndex,
             img,
-            id
+            finalid
         }
     }) 
     return {
