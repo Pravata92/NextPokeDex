@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 const Layout = ({title,children}) => {
 
     return (
-        <div className="bg-background flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen">
             <Head>
                 <title>{title}</title>
                 <link rel="icon" href="/favicon.ico" />
