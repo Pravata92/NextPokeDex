@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import Layout from '../components/Layout'
 import Link from "next/link"
 import PokeCardDetail from '../components/PokecarDetail'
+import tachyons from 'tachyons'
 
 export default function Detail({pokemon, id}){
     let Id = id
@@ -24,12 +25,12 @@ export default function Detail({pokemon, id}){
         </Link>
         </div>
         <div className="">
-        <div className="box-content rounded-lg mx-auto mt-10 bg-gray-200 p-4 shadow-lg xs:w-44 sm:w-48 md:w-72 lg:w-80 xl:w-96" >
+        <div className=" rounded-lg mx-auto mt-10 bg-gray-200 p-4 shadow-lg xs:w-full sm:w-2/6 md:w-72 lg:w-3/6 xl:w-2/5" >
             <div className="text-center mx-auto">
                 <h1 className="text-2xl mb-1 font-bold text-center capitalize">{pokemon.name}</h1>
                 <h2 className="font-bold mb-5">{ "# " + pokemon.paddedIndex}</h2>
             </div>
-            <div className="box-content md:box-content lg:inline-flex">
+            <div className="box-content  md:box-content lg:inline-flex">
                 <PokeCardDetail
                 img = {pokemon.img}
                 paddedIndex = {pokemon.paddedIndex}
@@ -58,7 +59,7 @@ export default function Detail({pokemon, id}){
         
         <p className="mt-10 text-center">
         <Link href="/">
-            <a className="text-2xl mx-auto underline">Home</a>
+            <a className=""><p className=" text-2xl mx-auto text-white underline grow">Home</p></a>
         </Link>
         </p>
 

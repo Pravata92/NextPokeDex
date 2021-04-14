@@ -5,7 +5,7 @@
 
 *{
 font-family: 'Lexend', sans-serif;
-overflow: hidden;
+
 }
 
 
@@ -23,6 +23,10 @@ overflow: hidden;
     font-size: 50px;
 }
 
-.body{
-    
+.fa-github-square{
+    font-size: 30px;
+}
+
+.fa-linkedin{
+    font-size: 30px;
 }
