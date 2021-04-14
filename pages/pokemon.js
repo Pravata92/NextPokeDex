@@ -24,17 +24,17 @@ export default function Detail({pokemon, id}){
         </Link>
         </div>
 
-        <div className="box-content mx-auto mt-10 w-6/12 bg-gray-400 border-black p-2 border-2">
+        <div className="box-content mx-auto w-auto mt-10 bg-gray-400 border-black p-2 border-2 ms: w-36 md: w-24 lg: w-28 xl:w-96" >
             <div className="mx-auto">
                 <h1 className="text-4xl mb-2 text-center capitalize">{pokemon.name  + " #" + pokemon.paddedIndex}</h1>
             </div>
-            <div className="xs:box-content md:box-content lg:inline-flex">
+            <div className="box-content md:box-content lg:inline-flex">
                 <PokeCardDetail
                 img = {pokemon.img}
                 paddedIndex = {pokemon.paddedIndex}
                 />
                 <div className="inline-flex">
-                    <div className="pr-2 pl-0 ms:pr-2 pl-0 md:pr-20 pl-5 lg:pr-20 pl-10">
+                    <div className="pr-2 pl-0 ms:pr-2 pl-0 md:pr-20 pl-5 lg:pr-20 pl-5">
                         <h2 className="font-bold mr-2">Weight:</h2>
                             <p>{pokemon.weight} Kg</p>
                         <h2 className="font-bold mr-2">Height:</h2>
