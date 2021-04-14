@@ -1,6 +1,6 @@
 const PokeCard = ({name, img, paddedIndex, index}) =>{
     return(
-        <div className="rounded box-content mx-auto border-2 bg-gray-100 border-black mb-4 overflow-hidden shadow-lg" style={{width: '185px'}}>
+        <div className="rounded box-content mx-auto border-2 bg-gray-100 border-black mb-4 overflow-hidden shadow-lg" style={{width: '100px'}}>
         
           <img className="w-full mx-auto" src={img} style={{width:'250px'}} alt="Mountain" />
         
