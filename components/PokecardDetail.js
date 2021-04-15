@@ -1,3 +1,4 @@
+import colors from "../utilities/colors"
 const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
     return(
         <>
@@ -14,8 +15,11 @@ const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
                     <div className="mr-5">
                         <h2 className="font-bold mr-2 pb-1">Types:</h2>
                         {types.map((type, index) => {
-                            return <span className="pb-1"  key={index}>{`• ${type.type.name}`}<br></br></span>
-                                    
+                            return (
+                            <div key={index}>
+                            <p className="px-2 mb-1 rounded-lg" style={{backgroundColor: colors[type.type.name]}}  key={index}>{`•${type.type.name}`}<br/></p>
+                            </div>
+                            )        
                         })}
                         <h2 className="font-bold mr-2 pb-1 pt-1">Abilities:</h2>
                         {abilities.map((ab, index) => {

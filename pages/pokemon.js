@@ -13,7 +13,7 @@ export default function Detail({pokemon, id}){
 
     return <Layout title={pokemon.name }>
         <>
-            <div className="arrow-container">
+            <div className="arrow-container pt-">
                 <Link href={`/pokemon?id=${parseInt(Id) > 1 ? parseInt(Id) - 1 : 251}`}>
                    <a>
                        <i className="fas fa-angle-double-left"></i>
@@ -41,9 +41,11 @@ export default function Detail({pokemon, id}){
                 </div>
             </div>
 
-            <div className="mt-10 text-center grow">
+            <div className="mt-10 btn text-center grow">
             <Link href="/">
-                <a className="mx-auto"><span className=" text-2xl mx-auto text-white underline grow">Home</span></a>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Poke Home
+            </button>
             </Link>
             </div>
         </>
