@@ -17,10 +17,12 @@ font-family: 'Lexend', sans-serif;
 }
 .fa-angle-double-right{
     font-size: 50px;
+    color: aliceblue;
 }
 
 .fa-angle-double-left{
     font-size: 50px;
+    color: aliceblue
 }
 
 .fa-github-square{

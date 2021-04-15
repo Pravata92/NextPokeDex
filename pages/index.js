@@ -25,7 +25,7 @@ const Home = ({pokemon}) => {
                 <input onChange={filteredPokemon} className="w-full h-16 px-8 rounded mb-8 focus:outline-none focus:shadow-outline text-xl shadow-lg" type="text" placeholder="Search..."/>
             </div>
         </div>
-        <div  className="mb-6 xs:h-96 xl:h-full" style={{width: "100%", maxHeight:"57vh", overflow:"scroll", overflowX:"hidden"}}>
+        <div  className="mb-6 xs:h-96 xl:h-full" style={{width: "100%", maxHeight:"58vh", overflow:"scroll", overflowX:"hidden"}}>
             <div style={{width: "100%", height:"100%", overflow:"auto"}}>
                 <div className="grid grid-cols-4 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
               {pokes.map((poke,index) => {
