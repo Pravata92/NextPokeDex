@@ -2,7 +2,7 @@ import colors from "../utilities/colors"
 const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
     return(
         <>
-    <div className="rounded box-content mx-auto bg-gray-100 mb-4  shadow-lg" style={{width: '175px'}}>
+    <div className="rounded box-content mx-auto bg-gray-100 mb-4  shadow-lg lg:ml-5" style={{width: '175px'}}>
           <img className="w-full mx-auto" src={img} style={{width:'250px'}} alt="pokemon" />
     </div>
     <div className="inline-flex">
