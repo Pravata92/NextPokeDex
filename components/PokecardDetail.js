@@ -19,7 +19,7 @@ const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
                         })}
                         <h2 className="font-bold mr-2 pb-1 pt-1">Abilities:</h2>
                         {abilities.map((ab, index) => {
-                            return <p className="pb-1" key={index}>{`• ${ab.ability.name}`}</p>
+                            return <p className="pb-1" key={index}>{`•${ab.ability.name}`}</p>
                         })}
                     </div>
                 </div>
