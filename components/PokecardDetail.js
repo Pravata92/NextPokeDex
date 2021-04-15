@@ -8,9 +8,9 @@ const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
     <div className="inline-flex">
                     <div className="pr-2  ms:pr-2  md:pr-20 pl-5 lg:pr-20 ">
                         <h2 className="font-bold mr-2 pb-2">Weight:</h2>
-                            <span>{weight} Kg.</span>
+                            <span>{weight} kg.</span>
                         <h2 className="font-bold mr-2 pb-2 pt-1">Height:</h2>
-                            <span>{height} Cm.</span>      
+                            <span>{height} cm.</span>      
                     </div>
                     <div className="mr-5">
                         <h2 className="font-bold mr-2 pb-1">Types:</h2>
