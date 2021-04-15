@@ -50,7 +50,7 @@ const Home = ({pokemon}) => {
 }
 
 Home.getInitialProps = async (query) => {
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=251")
     const {results} = await res.json()
     const pokemon = results.map((result, index) => {
         const paddedIndex = ("00" + (index +1)).slice(-3)
