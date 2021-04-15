@@ -6,7 +6,7 @@ const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
           <img className="w-full mx-auto" src={img} style={{width:'250px'}} alt="pokemon" />
     </div>
     <div className="inline-flex">
-                    <div className="pr-2 pl-0 ms:pr-2 pl-0 md:pr-20 pl-5 lg:pr-20 pl-5">
+                    <div className="pr-2  ms:pr-2  md:pr-20 pl-5 lg:pr-20 ">
                         <h2 className="font-bold mr-2 pb-2">Weight:</h2>
                             <span>{weight} Kg.</span>
                         <h2 className="font-bold mr-2 pb-2 pt-1">Height:</h2>

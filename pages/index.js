@@ -49,7 +49,7 @@ const Home = ({pokemon}) => {
     )
 }
 
-Home.getInitialProps = async (query) => {
+Home.getInitialProps = async () => {
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=251")
     const {results} = await res.json()
     const pokemon = results.map((result, index) => {

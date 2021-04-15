@@ -43,7 +43,7 @@ export default function Detail({pokemon, id}){
 
             <div className="mt-10 btn text-center grow">
             <Link href="/">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Poke Home
             </button>
             </Link>
