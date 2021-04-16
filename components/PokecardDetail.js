@@ -17,13 +17,13 @@ const PokeCardDetail = ({img, weight, height, types, abilities}) =>{
                         {types.map((type, index) => {
                             return (
                             <div key={index}>
-                            <p className="px-2 mb-1 rounded-lg" style={{backgroundColor: colors[type.type.name]}}  key={index}>{`•${type.type.name}`}<br/></p>
+                            <p className="px-2 mb-1 rounded-lg capitalize" style={{backgroundColor: colors[type.type.name]}}  key={index}>{`•${type.type.name}`}<br/></p>
                             </div>
                             )        
                         })}
                         <h2 className="font-bold mr-2 pb-1 pt-1">Abilities:</h2>
                         {abilities.map((ab, index) => {
-                            return <p className="pb-1" key={index}>{`•${ab.ability.name}`}</p>
+                            return <p className="pb-1 capitalize" key={index}>{`•${ab.ability.name}`}</p>
                         })}
                     </div>
                 </div>
