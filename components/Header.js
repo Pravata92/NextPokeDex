@@ -8,7 +8,7 @@ const Header = () =>{
               <div className="container mx-auto w-auto py-8">
                 <div className="inline-flex"> 
                 <Link href="/">
-                <img  className="p-5 grow shadow-2xl" src="/pokeball-2.png" width={"90px"}/>
+                <img  className="p-5 grow shadow-2xl" src="/pokeball-2.png" alt="pokeball-icon" width={"90px"}/>
                 </Link>
                 </div>
               </div>
