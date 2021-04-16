@@ -7,7 +7,7 @@
     ghost: '#7b62a3',
     ground: '#f7de3f',
     psychic: '#f366b9',
-    steel: '#9eb7b',
+    steel: '#b5b3b4',
     electric: '#eed535',
     rock: '#a38c21',
     flying: '#3dc7ef',
