@@ -5,21 +5,16 @@ import PokeCardDetail from '../components/PokecardDetail'
 import tachyons from 'tachyons'
 
 export default function Detail({pokemon, id}){
-    let Id = id
-    useEffect(() =>{
-        return pokemon
-    }, [Id])
-
-
+   
     return <Layout title={pokemon.name }>
         <>
             <div className="arrow-container pt-">
-                <Link href={`/pokemon?id=${parseInt(Id) > 1 ? parseInt(Id) - 1 : 251}`}>
+                <Link href={`/pokemon?id=${parseInt(id) > 1 ? parseInt(id) - 1 : 251}`}>
                    <a>
                        <i className="fas fa-angle-double-left"></i>
                    </a>
                </Link>
-               <Link href={`/pokemon?id=${parseInt(Id) < 251 ? parseInt(Id) + 1 : 1}`}>
+               <Link href={`/pokemon?id=${parseInt(id) < 251 ? parseInt(id) + 1 : 1}`}>
                    <a>
                        <i className="fas fa-angle-double-right"></i>
                    </a>
